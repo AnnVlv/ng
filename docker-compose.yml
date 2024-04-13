@@ -1,0 +1,11 @@
+services:
+
+  static:
+    build:
+      .
+    image:
+      annvlv/ng
+    volumes:
+      - ./dist/ng/browser:/usr/share/nginx/html:ro
+    ports:
+      - 80:80
